@@ -8,7 +8,7 @@ def PushToMongodb():
     filename = 'ChaosReport.txt'
 
 
-    #Transform to json to push into the mongodb
+    #Transform to json
     #Limitations text file & type ='name jhon' to {"name": "jhon"} works for multiple lines 
     dict1 ={}
 
@@ -52,7 +52,4 @@ def PushToMongodb():
 
     #return the inserted id of the instance
     return result.inserted_id
-
-
-
-# print(PushToMongodb())
+ 
